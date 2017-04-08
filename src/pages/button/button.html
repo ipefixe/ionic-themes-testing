@@ -12,10 +12,14 @@
   <ion-list>
     <ion-item *ngFor="let button of buttons">
       <button
-        ion-button color="{{ button.buttonColor }}"
-        outline="{{ button.buttonType == 'outline' ? 'true' : 'false' }}"
-        full="{{ button.buttonShape == 'full' ? 'true' : 'false' }}" >
-        {{ button.buttonColor }} {{ button.buttonType }} {{ button.buttonShape }}
+        ion-button
+        color="{{ button.buttonColor }}"
+        [outline]="button.buttonType == 'outline'"
+        [clear]  ="button.buttonType == 'clear'"
+        [full]   ="button.buttonShape == 'full'"
+        [block]  ="button.buttonShape == 'block'"
+        [round]  ="button.buttonShape == 'round'" >
+        {{ button.buttonColor == '' ? 'Default' : button.buttonColor }} {{ button.buttonType == '' ? 'Default' : button.buttonType }} {{ button.buttonShape == '' ? 'Default' : button.buttonShape }}
       </button>
     </ion-item>
   </ion-list>
