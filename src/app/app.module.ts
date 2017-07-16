@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { BrowserModule } from '@angular/platform-browser';
 import { MyApp } from './app.component';
 import { MainPage } from '../pages/main/main';
 import { ButtonPage } from '../pages/button/button';
@@ -16,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CheckboxPage
   ],
   imports: [
+    BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
