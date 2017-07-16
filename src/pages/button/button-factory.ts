@@ -1,4 +1,6 @@
 
+// Doesn't work for now, see: https://github.com/ionic-team/ionic/issues/11155
+
 export class ButtonProperties {
   static buttonType : [string] = ["", "outline", "clear"];
   static buttonShape: [string] = ["", "full", "block", "round"];
