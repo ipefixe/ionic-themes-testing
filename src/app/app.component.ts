@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MainPage } from '../pages/main/main';
 import { ButtonPage } from '../pages/button/button';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
 
 
 @Component({
@@ -22,7 +23,8 @@ export class MyApp {
 
     this.pages = [
       { title: 'Ionic Themes Testing', component: MainPage },
-      { title: 'Button', component: ButtonPage }
+      { title: 'Button', component: ButtonPage },
+      { title: 'Checkbox', component: CheckboxPage }
     ];
 
   }

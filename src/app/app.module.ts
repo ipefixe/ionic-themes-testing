@@ -3,6 +3,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { MainPage } from '../pages/main/main';
 import { ButtonPage } from '../pages/button/button';
+import { CheckboxPage } from "../pages/checkbox/checkbox";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -11,7 +12,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     MainPage,
-    ButtonPage
+    ButtonPage,
+    CheckboxPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     MainPage,
-    ButtonPage
+    ButtonPage,
+    CheckboxPage
   ],
   providers: [
     StatusBar,
